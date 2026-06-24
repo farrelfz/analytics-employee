@@ -34,12 +34,11 @@ else:
     df_plot['Lembur Wajib'] = df_plot['OverTime'].map({'Yes': 'Ya', 'No': 'Tidak'})
     
     # Konfigurasi Tab
-    t1, t2, t3, t4, t5 = st.tabs([
+    t1, t2, t3, t4 = st.tabs([
         "👤 Demografi & Ikhtisar",
         "🏢 Analisis Departemen & Peran",
         "💰 Analisis Gaji & Masa Kerja",
         "⭐ Kepuasan & Kesejahteraan",
-        "🔗 Dinamika Korelasi"
     ])
     
     # Tema Grafik
@@ -305,20 +304,6 @@ else:
         st.markdown("""
             <div class='highlight-box'>
                 <b>Interpretasi:</b> Karyawan dengan tingkat keseimbangan hidup yang <b>Buruk (Level 1)</b> menunjukkan persentase attrisi ekstrem sebesar <b>31.2%</b>. Ini menegaskan bahwa WLB adalah salah satu fondasi utama program retensi HR.
-            </div>
-        """, unsafe_allow_html=True)
-        st.markdown("</div>", unsafe_allow_html=True)
-
-    # ------------------ TAB 5: DINAMIKA KORELASI ------------------
-    with t5:
-        st.markdown("### Matriks Korelasi Pearson Fitur Numerik")
-        st.markdown("<div class='content-container'>", unsafe_allow_html=True)
-        fig10 = plot_correlation_heatmap(df)
-        st.plotly_chart(fig10, use_container_width=True)
-        st.markdown("""
-            <div class='highlight-box'>
-                <b>Interpretasi:</b> 
-                Matriks korelasi ini menggambarkan kekuatan hubungan linear antar variabel numerik. Hubungan positif yang kuat terlihat jelas pada variabel masa kerja (misalnya <i>YearsAtCompany</i> dengan <i>TotalWorkingYears</i>). Model machine learning kami memanfaatkan korelasi tersembunyi ini untuk memetakan profil risiko karyawan secara menyeluruh.
             </div>
         """, unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
