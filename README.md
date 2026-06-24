@@ -11,9 +11,6 @@ Proyek sains data akademis profesional untuk mendiagnosis dan memprediksi risiko
 │   ├── Employee-Attrition.csv              # IBM HR Analytics Attrition Dataset
 │   └── employee_attrition_preprocessed.csv # Preprocessed dataset untuk pelatihan model
 │
-├── docs/
-│   └── Mini Project Data Science.docx      # Laporan dokumentasi proyek
-│
 ├── model/
 │   ├── best_model.keras                    # Model Jaringan Saraf Tiruan (Keras ANN) yang telah dilatih
 │   └── mp1_artifacts.pkl                   # Model ML & objek standardisasi (joblib/pickle)
@@ -33,8 +30,7 @@ Proyek sains data akademis profesional untuk mendiagnosis dan memprediksi risiko
 │   └── styles.py                           # Modul injeksi kode CSS kustom aplikasi
 │
 ├── app.py                                  # Halaman beranda platform
-├── requirements.txt                        # Daftar dependensi Python
-├── test.py                                 # Skrip penguji kesehatan server
+├── requirements.txt                        # Daftar dependensi Python                                
 └── README.md                               # Dokumentasi proyek (file ini)
 ```
 
